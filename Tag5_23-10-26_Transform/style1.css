@@ -1,0 +1,61 @@
+h1 {
+  font-family: 'alata';
+  padding-bottom: 3rem;
+}
+
+body {
+  padding: 1rem;
+  margin-left: 4rem;
+}
+
+.group {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+/* beide Elemente liegen ursprünglich übereinander */
+.not_transformed,
+.transformed{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  height: 400px;
+  width: 400px;
+  font-family: 'alata';
+}
+
+/* zur visuellen Unterscheidung zwei unterschiedliche Stile zuweisen */
+.not_transformed {
+  background-color: black;
+}
+
+.transformed {
+  background-color: rgba(0, 0, 255, 0.5);
+  color: white;
+  font-size: 40px;
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.5s;
+}
+
+.verschoben:hover{
+  transform: translate(70px, -60px);
+}
+
+.rotieren:hover {
+  transform: rotate(-37deg);
+}
+
+.scale:hover {
+  transform: scale(0.8, 1.2);
+}
+
+.skew:hover {
+  transform: skewX(10deg);
+  transform: skewY(20deg);
+}
+
+.combination:hover {
+  transform: scale(0.5) rotate(45deg);
+}

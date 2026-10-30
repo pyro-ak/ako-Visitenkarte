@@ -1,0 +1,65 @@
+h1 {
+    font-family: "Alata", sans-serif;
+    font: size 2.2rem;
+    padding-left: 1.7rem;
+    color: azure;
+}
+
+h2 {
+    font-family: "Alata", sans-serif;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    color: azure;
+}
+
+h3 {
+    font-family: "Alata", sans-serif;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.8rem;
+    color: azure;
+}
+
+h4 {
+    font-family: "Alata", sans-serif;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    padding-right: 4.6rem;
+    color: azure;
+}
+
+body {
+    background-image: url("Botanic1.jpg");
+    background-size: cover;
+    cursor: url(Cursor-B1.png) 4 4, auto;
+}
+
+.Sp1 {
+    list-style-type: circle;
+}
+
+.Sp2 {
+    list-style-type: none;
+}
+
+.zweiSpalten {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    color: azure;
+    font-family: "Alata", sans-serif;
+    font-size: 1.2rem;
+    padding: 1,15rem;
+    width: 46rem;
+    background-color: rgba(174, 213, 129, 0.5);
+    margin-bottom: 2.5rem;
+    border-radius: 1.8rem;
+}
+
+.Frucht2{
+    padding-left: 3.7rem;
+}
+
+.Pilze2{
+padding-left: 1rem;
+}

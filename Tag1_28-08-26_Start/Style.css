@@ -1,0 +1,29 @@
+h1
+{font-family: "Verdana, Geneva, Tahoma, sans-serif";
+    font-size: 30pt;
+    padding-left: 20px;
+    color:blueviolet}
+
+h2{color: blueviolet;
+    font-size: 24pt;
+border: 20px;
+padding-left: 30px;}
+
+div{
+    background-color: #f6eeff;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.gross_lila{
+background-color: #e2def0;
+padding: 10px;
+border-radius: 10px;
+margin: 10px;
+}
+
+a{padding-left: 30px;}
+
+body {cursor: url("roll.png") 8 8, auto;
+}

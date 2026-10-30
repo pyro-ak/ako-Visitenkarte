@@ -1,0 +1,86 @@
+h1 {
+    font-family: "Shrikhand", serif;
+    font-size: 4.3rem;
+    writing-mode: sideways-lr;
+    padding-top: 0.3rem;
+    margin: 0rem;
+    overflow-x: hidden;
+    transform: translateX(-25%)
+}
+
+h2 {
+    font-family: "Baloo Bhai 2", cursive, sans-serif;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    color: rgb(74, 104, 69);
+}
+
+h3 {
+    font-family: "Baloo Bhai 2", cursive, sans-serif;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.8rem;
+    color: rgb(74, 104, 69);
+}
+
+h4 {
+    font-family: "Baloo Bhai 2", cursive, sans-serif;
+    font-size: 1.4rem;
+    padding-left: 1.5rem;
+    padding-right: 4.6rem;
+    color: rgb(74, 104, 69);
+}
+
+.container {
+    font-family: "Baloo Bhai 2", cursive, sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 8rem;
+    color: rgb(74, 104, 69);
+    background-color: rgba(215, 242, 219, 0.5);
+    margin-top: 0rem;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.kategorie-titel {
+    flex: 1;
+}
+
+.Sp1 {
+    list-style-type: circle;
+}
+
+.Sp2 {
+    list-style-type: none;
+}
+
+.zweiSpalten {
+    display: flex;
+    justify-content: center;
+    /* Horizontale Zentrierung */
+    align-items: center;
+    /* Vertikale Zentrierung */
+    height: 4rem;
+    /* Nutzt die volle Höhe des Bildschirms */
+    text-align: left;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    color: azure;
+    font-family: "Alata", sans-serif;
+    font-size: 1.2rem;
+    padding: 1rem;
+    width: 20rem;
+    background-color: rgba(215, 242, 219, 0.5);
+    border-radius: 1.8rem;
+}
+
+body {
+    background-image: url("Botanic2.jpg");
+    background-size: cover;
+}
