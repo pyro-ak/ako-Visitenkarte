@@ -1,0 +1,146 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Cochin', bold;
+    font-size: 5rem;
+}
+
+h2 {
+    font-family: 'Cochin', bold;
+    font-size: 5rem;
+    padding-top: -3rem;
+}
+
+.word span {
+    display: inline-block;
+    animation: huepfen 1.2s ease-in-out infinite alternate;
+    animation-delay: calc(var(--i) * 0.12s);
+}
+
+@keyframes huepfen {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+
+    60% {
+        transform: translateY(-24px) rotate(-6deg);
+    }
+
+    100% {
+        transform: translateY(0) rotate(4deg);
+    }
+}
+
+.lyrics {
+    font-family: 'Cochin' italic;
+    font-size: 2rem;
+    display: flex;
+    align-items: 50vh;
+}
+
+.line1 {
+    animation-name: line1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes line1 {
+    0% {
+        transform: translate(-100vh, 0);
+        color: orange;
+    }
+
+    40% {
+        transform: translate(50vh, 0);
+        color: rgb(163, 18, 18);
+    }
+
+    60% {
+        transform: translate(50vh, 0);
+        color: rgb(163, 18, 18);
+    }
+
+    95% {
+        transform: translate(100vh, 0);
+        color: rgb(244, 186, 186);
+    }
+
+    100% {
+        transform: translate(150vh, 0);
+        color: rgb(244, 186, 186);
+        opacity: 0%;
+    }
+}
+
+.line2 {
+    animation-name: line2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes line2 {
+    0% {
+        transform: translate(-100vh, 0);
+        color: orange;
+    }
+
+    40% {
+        transform: translate(50, 0);
+        color: rgb(163, 18, 18);
+    }
+
+    60% {
+        transform: translate(50, 0);
+        color: rgb(163, 18, 18);
+    }
+
+    95% {
+        transform: translate(100vh, 0);
+        color: rgb(244, 186, 186);
+    }
+
+    100% {
+        transform: translate(150vh, 0);
+        color: rgb(244, 186, 186);
+        opacity: 0%;
+    }
+}
+
+.line3 {
+    animation-name: line3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes line3 {
+    0% {
+        transform: translate(-100vh, 0);
+        color: orange;
+    }
+
+    30% {
+        transform: translate(50vh, 0);
+        color: rgb(163, 18, 18);
+    }
+
+    70% {
+        transform: translate(50vh, 0);
+        color: rgb(163, 18, 18);
+    }
+
+    95% {
+        transform: translate(100vh, 0);
+        color: rgb(244, 186, 186);
+    }
+
+    100% {
+        transform: translate(150vh, 0);
+        color: rgb(244, 186, 186);
+        opacity: 0%;
+    }
+}
