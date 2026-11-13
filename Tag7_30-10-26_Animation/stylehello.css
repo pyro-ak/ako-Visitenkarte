@@ -36,8 +36,9 @@ h2 {
 .lyrics {
     font-family: 'Cochin' italic;
     font-size: 2rem;
-    display: flex;
-    align-items: 50vh;
+    text-align: center;
+    align-items: center;
+    margin: 1.5rem;
 }
 
 .line1 {
@@ -54,18 +55,13 @@ h2 {
     }
 
     40% {
-        transform: translate(50vh, 0);
+        transform: translate(center, 0);
         color: rgb(163, 18, 18);
     }
 
-    60% {
-        transform: translate(50vh, 0);
+    70% {
+        transform: translate(center, 0);
         color: rgb(163, 18, 18);
-    }
-
-    95% {
-        transform: translate(100vh, 0);
-        color: rgb(244, 186, 186);
     }
 
     100% {
