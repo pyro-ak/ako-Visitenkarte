@@ -13,6 +13,7 @@ body {
     background: var(--papier);
     color: var(--schwarz);
     font-family: "Jost", sans-serif;
+    cursor: url(text.png) 4 4, auto;
 }
 
 /* Abstände der Browser zurücksetzen */
@@ -38,6 +39,18 @@ body {
     align-self: end;
     height: 1.6vw;
     background: var(--rot);
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .balken-senkrecht {
@@ -45,6 +58,7 @@ body {
     grid-row: 5 / 17;
     width: 1.6vw;
     background: var(--rot);
+    animation: slideIn 1s ease-in-out forwards;
 }
 
 .mitteilungen {
@@ -53,6 +67,7 @@ body {
     font-size: 7vw;
     font-weight: 600;
     text-align: right;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .typographische {
@@ -79,12 +94,29 @@ body {
     font-size: 4.2vw;
     font-weight: 300;
     text-align: right;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .elementare {
     display: flex;
     flex-direction: column;
     font-size: 4.2vw;
+    animation: atmen 3s ease-in-out infinite;
+}
+
+@keyframes atmen {
+  0%, 100% { transform: scale(0.97); }
+  50%      { transform: scale(1); }
 }
 
 .elementare span {
