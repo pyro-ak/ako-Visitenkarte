@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zerknülltes Blatt</title>
+  <link rel="stylesheet" href="style_test.css">
+</head>
+
+<!-- onwheel: wird ausgelöst, sobald man mit Maus/Trackpad scrollt -->
+<body onwheel="rollen(event)">
+
+  <!-- FIRST SCREEN: der Papierball -->
+  <!-- #ball bewegt sich beim Scrollen, #papier ist das Blatt selbst -->
+  <div id="ball">
+    <div id="papier" onclick="entfalten()">
+
+      <!-- Falten / Knitterlinien (grau) -->
+      <span class="falte" style="top: 30%; left: 15%; width: 55%; transform: rotate(20deg);"></span>
+      <span class="falte" style="top: 55%; left: 25%; width: 60%; transform: rotate(-35deg);"></span>
+      <span class="falte" style="top: 70%; left: 10%; width: 45%; transform: rotate(10deg);"></span>
+      <span class="falte" style="top: 20%; left: 45%; width: 40%; transform: rotate(-60deg);"></span>
+      <span class="falte" style="top: 45%; left: 5%;  width: 35%; transform: rotate(75deg);"></span>
+
+      <!-- Farbige Kanten, die leicht aufleuchten -->
+      <!-- --i = Verzögerung, --farbe = Farbe der Kante -->
+      <span class="kante" style="--i: 0; --farbe: #ff6b35; top: 18%; left: 30%; width: 25%; transform: rotate(-25deg);"></span>
+      <span class="kante" style="--i: 1; --farbe: #2ec4b6; top: 40%; left: 60%; width: 22%; transform: rotate(50deg);"></span>
+      <span class="kante" style="--i: 2; --farbe: #e71d73; top: 62%; left: 18%; width: 28%; transform: rotate(15deg);"></span>
+      <span class="kante" style="--i: 3; --farbe: #ffd23f; top: 78%; left: 50%; width: 20%; transform: rotate(-40deg);"></span>
+      <span class="kante" style="--i: 4; --farbe: #7b2ff7; top: 32%; left: 8%;  width: 18%; transform: rotate(70deg);"></span>
+      <span class="kante" style="--i: 5; --farbe: #3a86ff; top: 52%; left: 42%; width: 16%; transform: rotate(-80deg);"></span>
+
+    </div>
+  </div>
+
+  <!-- Das Licht, das beim Entfalten herausströmt -->
+  <div id="licht"></div>
+
+  <!-- Platzhalter für den SECOND SCREEN (kommt später) -->
+  <div id="screen2">
+    <p>Second Screen kommt hier hin</p>
+  </div>
+
+  <!-- Crumbling Sound: eigene Datei "knistern.mp3" in denselben Ordner legen -->
+  <audio id="knistern" src="knistern.mp3"></audio>
+
+  <script src="javascript_test.js"></script>
+</body>
+</html>
